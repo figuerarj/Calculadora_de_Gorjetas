@@ -4,11 +4,11 @@ function calculateTip(event) {
   let serviceQual = document.getElementById("serviceQual").value;
   let numOfPeople = document.getElementById("people").value;
 
-  if ((bill == "") | (serviceQual == 0)) {
+  if ((bill === "") | (serviceQual === 0)) {
     alert("Por favor, preencha os valores e escolha uma opção");
     return;
   }
-  if ((numOfPeople == "") | (numOfPeople <= 1)) {
+  if ((numOfPeople === "") | (numOfPeople <= 1)) {
     numOfPeople = 1;
     document.getElementById("each").style.display = "none";
   } else {
